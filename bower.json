@@ -1,0 +1,23 @@
+{
+  "name": "view-email-framework",
+  "homepage": "https://github.com/andesigns/view-email-framework",
+  "authors": [
+    "Anmol Nandha <anmol@andesigns.co.uk>"
+  ],
+  "description": "VIEW - A no nonsense email framework made for developers by developers",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "tether": "^1.4.0"
+  }
+}

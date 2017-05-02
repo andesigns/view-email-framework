@@ -1,0 +1,21 @@
+{
+  "name": "view-email-framework",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://anmol@andesigns.co.uk:Srishti@2616@github.com/andesigns/view-email-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andesigns/view-email-framework/issues"
+  },
+  "homepage": "https://github.com/andesigns/view-email-framework#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
