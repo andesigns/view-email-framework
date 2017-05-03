@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "general.css",
+  "sources": [
+    "general.scss"
+  ],
+  "mappings": "AAAA,kBAAkB",
+  "names": []
+}

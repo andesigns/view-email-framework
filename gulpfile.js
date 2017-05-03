@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 
 // concatenate js files
 gulp.task('scripts', function () {
-  return gulp.src(['bower_components/**/dist/*.min.js', 'bower_components/**/dist/js/*.min.js', 'bower_components/tether/dist/js/tether.min.js'])
+  return gulp.src(['bower_components/**/dist/*.min.js', 'bower_components/tether/dist/js/tether.min.js', 'bower_components/**/dist/js/*.min.js'])
     .pipe(concat('plugins.js'))
     .pipe(gulp.dest('js'));
 });
