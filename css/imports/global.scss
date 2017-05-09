@@ -1,0 +1,85 @@
+/* font families */
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600, 700|Quicksand:300,400,500,700');
+$dosis: 'Dosis',
+Helvetica,
+Arial,
+sans-serif;
+$quicksand: 'Quicksand',
+Arial,
+sans-serif;
+@mixin dosis-font($weight) {
+  font-family: $dosis;
+  font-weight: $weight;
+}
+
+@mixin quicksand-font($weight) {
+  font-family: $quicksand;
+  font-weight: $weight;
+}
+
+
+/* colours */
+
+$view_grass_green: #67B93C;
+$view_blood_red: #A51A41;
+$view_light_green: #C3CCAF;
+$view_dirty_gold: #9B8E7E;
+$view_brown: #67434F;
+$view_dark_purple: #1E1223;
+$view_purple: #311D39;
+
+/* buttons */
+
+@mixin view-btn($borderColor,
+$borderRadius,
+$borderWidth,
+$fontColor,
+$backgroundColor) {
+  background-color: $backgroundColor;
+  border-width: $borderWidth;
+  border-color: $borderColor;
+  border-radius: $borderRadius;
+  color: $fontColor;
+  @include quicksand-font(500);
+}
+
+@mixin view-btn-hover($borderColor,
+$borderRadius,
+$borderWidth,
+$fontColor,
+$backgroundColor) {
+  background-color: $backgroundColor;
+  border-width: $borderWidth;
+  border-color: $borderColor;
+  border-radius: $borderRadius;
+  color: $fontColor;
+  @include quicksand-font(500);
+}
+
+
+/* global */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include dosis-font(700);
+  }
+  p,
+  li {
+    @include quicksand-font(400);
+  }
+  a {
+    color: $view_blood_red;
+  }
+}

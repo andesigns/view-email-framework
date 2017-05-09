@@ -1,0 +1,221 @@
+@import 'imports/global.scss';
+
+/* header */
+
+header {
+  padding: 150px 15px;
+  width: 100%;
+  background: url(../images/hero-background@2x.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.5s ease;
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    margin: 30px auto 0;
+    width: 50%;
+    display: block;
+    font-size: 40px;
+    color: $view_dark_purple;
+    transition: all 0.5s ease;
+  }
+  .btn-hero {
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    @include view-btn(#ffffff, 30px, 2px, white, none);
+    transition: all 0.5s ease;
+    &:hover {
+      @include view-btn(#ffffff, 30px, 2px, $view_dark_purple, white);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 100px 15px;
+    h2 {
+      width: 75%;
+      font-size: 25px;
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  header {
+    padding: 100px 15px;
+    h2 {
+      width: 75%;
+      font-size: 25px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  header {
+    padding: 125px 15px;
+    h2 {
+      width: 50%;
+      font-size: 32px;
+    }
+  }
+}
+
+
+/* get started */
+
+#get-started {
+  padding: 35px 15px;
+  h1 {
+    font-size: 70px;
+    color: $view_purple;
+    transition: all 0.5s ease;
+  }
+  p {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    color: lighten(black, 20%);
+    transition: all 0.5s ease;
+  }
+}
+
+@media (max-width: 576px) {
+  #get-started {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #get-started {
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #get-started {
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+
+
+/* prebuilt templates */
+
+#prebuilt-templates {
+  padding: 35px 15px;
+  background-color: lighten($view_dirty_gold, 40%);
+  h1 {
+    margin-bottom: 40px;
+    @include dosis-font(400);
+    font-size: 50px;
+    color: $view_dirty_gold;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  .btn-templates {
+    padding-left: 30px;
+    padding-right: 30px;
+    @include view-btn(transparent, 30px, 2px, white, $view_dirty_gold);
+    transition: all 0.5s ease;
+    &:hover {
+      @include view-btn($view_dirty_gold, 30px, 2px, $view_dirty_gold, transparent);
+    }
+  }
+  .card {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative;
+    .template-title {
+      padding: 3px 5px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 12px;
+      background: $view_dirty_gold;
+      color: white;
+      border-bottom-left-radius: 7px;
+    }
+    .card-block {
+      .card-text {
+        text-align: center;
+        .btn-hero {
+          padding-left: 30px;
+          padding-right: 30px;
+          @include view-btn($view_dirty_gold, 30px, 2px, $view_dirty_gold, transparent);
+          transition: all 0.5s ease;
+          &:hover {
+            @include view-btn(transparent, 30px, 2px, white, $view_dirty_gold);
+          }
+        }
+        .litmus-test {
+          font-size: 12px;
+          color: $view_dirty_gold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #prebuilt-templates {
+    h1 {
+      font-size: 35px;
+      text-align: left;
+    }
+  }
+}
+
+
+/* supported clients */
+
+#supported-clients {
+  padding: 35px 15px;
+  h1 {
+    padding-top: 10px;
+    margin-bottom: 40px;
+    @include dosis-font(600);
+    font-size: 50px;
+    color: $view_brown;
+    .fa-lg {
+      margin-top: -10px;
+      font-size: 35px;
+    }
+  }
+  .supported-client {
+    min-height: 55px;
+    margin-bottom: 20px;
+    padding: 2px 20px;
+    background: lighten($view_brown, 60%);
+    .supported-check {
+      color: $view_grass_green;
+    }
+    h2 {
+      padding-top: 7px;
+      padding-left: 5px;
+      @include quicksand-font(400);
+      font-size: 20px;
+      color: $view_brown;
+      line-height: 12px;
+      small {
+        @include quicksand-font(300);
+        font-size: 12px;
+      }
+    }
+  }
+}

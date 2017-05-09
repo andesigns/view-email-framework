@@ -1,1 +1,225 @@
-/*# sourceMappingURL=style.css.map */
+/* font families */
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600, 700|Quicksand:300,400,500,700");
+/* colours */
+/* buttons */
+/* global */
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+body p,
+body li {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400; }
+
+body a {
+  color: #A51A41; }
+
+/* header */
+header {
+  padding: 150px 15px;
+  width: 100%;
+  background: url(../images/hero-background@2x.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.5s ease; }
+  header h1 {
+    margin: 0; }
+  header h2 {
+    margin: 30px auto 0;
+    width: 50%;
+    display: block;
+    font-size: 40px;
+    color: #1E1223;
+    transition: all 0.5s ease; }
+  header .btn-hero {
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: none;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-radius: 30px;
+    color: white;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 500;
+    transition: all 0.5s ease; }
+    header .btn-hero:hover {
+      background-color: white;
+      border-width: 2px;
+      border-color: #ffffff;
+      border-radius: 30px;
+      color: #1E1223;
+      font-family: "Quicksand", Arial, sans-serif;
+      font-weight: 500; }
+
+@media (max-width: 576px) {
+  header {
+    padding: 100px 15px; }
+    header h2 {
+      width: 75%;
+      font-size: 25px; } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  header {
+    padding: 100px 15px; }
+    header h2 {
+      width: 75%;
+      font-size: 25px; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  header {
+    padding: 125px 15px; }
+    header h2 {
+      width: 50%;
+      font-size: 32px; } }
+
+/* get started */
+#get-started {
+  padding: 35px 15px; }
+  #get-started h1 {
+    font-size: 70px;
+    color: #311D39;
+    transition: all 0.5s ease; }
+  #get-started p {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    transition: all 0.5s ease; }
+
+@media (max-width: 576px) {
+  #get-started h1 {
+    font-size: 40px; }
+  #get-started p {
+    font-size: 16px;
+    line-height: 22px; } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #get-started h1 {
+    font-size: 50px; }
+  #get-started p {
+    font-size: 16px;
+    line-height: 22px; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #get-started h1 {
+    font-size: 60px; } }
+
+/* prebuilt templates */
+#prebuilt-templates {
+  padding: 35px 15px;
+  background-color: #f4f3f1; }
+  #prebuilt-templates h1 {
+    margin-bottom: 40px;
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #9B8E7E;
+    text-align: center;
+    transition: all 0.5s ease; }
+  #prebuilt-templates .btn-templates {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #9B8E7E;
+    border-width: 2px;
+    border-color: transparent;
+    border-radius: 30px;
+    color: white;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 500;
+    transition: all 0.5s ease; }
+    #prebuilt-templates .btn-templates:hover {
+      background-color: transparent;
+      border-width: 2px;
+      border-color: #9B8E7E;
+      border-radius: 30px;
+      color: #9B8E7E;
+      font-family: "Quicksand", Arial, sans-serif;
+      font-weight: 500; }
+  #prebuilt-templates .card {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative; }
+    #prebuilt-templates .card .template-title {
+      padding: 3px 5px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 12px;
+      background: #9B8E7E;
+      color: white;
+      border-bottom-left-radius: 7px; }
+    #prebuilt-templates .card .card-block .card-text {
+      text-align: center; }
+      #prebuilt-templates .card .card-block .card-text .btn-hero {
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: transparent;
+        border-width: 2px;
+        border-color: #9B8E7E;
+        border-radius: 30px;
+        color: #9B8E7E;
+        font-family: "Quicksand", Arial, sans-serif;
+        font-weight: 500;
+        transition: all 0.5s ease; }
+        #prebuilt-templates .card .card-block .card-text .btn-hero:hover {
+          background-color: #9B8E7E;
+          border-width: 2px;
+          border-color: transparent;
+          border-radius: 30px;
+          color: white;
+          font-family: "Quicksand", Arial, sans-serif;
+          font-weight: 500; }
+      #prebuilt-templates .card .card-block .card-text .litmus-test {
+        font-size: 12px;
+        color: #9B8E7E; }
+
+@media (max-width: 576px) {
+  #prebuilt-templates h1 {
+    font-size: 35px;
+    text-align: left; } }
+
+/* supported clients */
+#supported-clients {
+  padding: 35px 15px; }
+  #supported-clients h1 {
+    padding-top: 10px;
+    margin-bottom: 40px;
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #67434F; }
+    #supported-clients h1 .fa-lg {
+      margin-top: -10px;
+      font-size: 35px; }
+  #supported-clients .supported-client {
+    min-height: 55px;
+    margin-bottom: 20px;
+    padding: 2px 20px;
+    background: #f2eaed; }
+    #supported-clients .supported-client .supported-check {
+      color: #67B93C; }
+    #supported-clients .supported-client h2 {
+      padding-top: 7px;
+      padding-left: 5px;
+      font-family: "Quicksand", Arial, sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      color: #67434F;
+      line-height: 12px; }
+      #supported-clients .supported-client h2 small {
+        font-family: "Quicksand", Arial, sans-serif;
+        font-weight: 300;
+        font-size: 12px; }

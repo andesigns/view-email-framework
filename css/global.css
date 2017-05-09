@@ -1,0 +1,26 @@
+/* font families */
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600, 700|Quicksand:300,400,500,700");
+/* colours */
+/* buttons */
+/* global */
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+body p,
+body li {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400; }
+
+body a {
+  color: #A51A41; }

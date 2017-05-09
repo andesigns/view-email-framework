@@ -3,6 +3,7 @@ var gulp = require('gulp');
 
 // include plugins
 var concat = require('gulp-concat');
+var sass = require('gulp-sass');
 
 // concatenate js files
 gulp.task('scripts', function () {
@@ -23,5 +24,18 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('fonts'));
 });
 
+// Compile Our Sass
+gulp.task('sass', function () {
+  return gulp.src(['css/*.scss', 'css/imports/*.scss'])
+    .pipe(sass())
+    .pipe(gulp.dest('css'));
+});
+
+gulp.task('watch', function () {
+  gulp.watch('css/*.scss', ['sass']);
+  gulp.watch('css/imports/*.scss', ['sass']);
+});
+
+
 // default task
-gulp.task('default', ['scripts', 'styles', 'fonts']);
+gulp.task('default', ['scripts', 'styles', 'fonts', 'watch', 'sass']);
