@@ -223,3 +223,38 @@ header {
         font-family: "Quicksand", Arial, sans-serif;
         font-weight: 300;
         font-size: 12px; }
+
+/* subscribe */
+#subscribe {
+  padding: 35px 15px;
+  background: #f2f4ed; }
+  #subscribe h1 {
+    color: #C3CCAF; }
+  #subscribe .input-group .form-control {
+    border-radius: 0;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    color: #C3CCAF; }
+  #subscribe .input-group input[type="submit"] {
+    font-family: FontAwesome; }
+    #subscribe .input-group input[type="submit"]:hover {
+      font-family: FontAwesome; }
+  #subscribe .input-group .btn-subscribe {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #C3CCAF;
+    border-width: 2px;
+    border-color: transparent;
+    border-radius: 0px;
+    color: white;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 500;
+    transition: all 0.5s ease; }
+    #subscribe .input-group .btn-subscribe:hover {
+      background-color: #94a471;
+      border-width: 2px;
+      border-color: transparent;
+      border-radius: 0px;
+      color: white;
+      font-family: "Quicksand", Arial, sans-serif;
+      font-weight: 500; }

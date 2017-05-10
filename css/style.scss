@@ -219,3 +219,36 @@ header {
     }
   }
 }
+
+
+/* subscribe */
+
+#subscribe {
+  padding: 35px 15px;
+  background: lighten($view_light_green, 20%);
+  h1 {
+    color: $view_light_green;
+  }
+  .input-group {
+    .form-control {
+      border-radius: 0;
+      @include quicksand-font(400);
+      color: $view_light_green;
+    }
+    input[type="submit"] {
+      font-family: FontAwesome;
+      &:hover {
+        font-family: FontAwesome;
+      }
+    }
+    .btn-subscribe {
+      padding-left: 10px;
+      padding-right: 10px;
+      @include view-btn(transparent, 0px, 2px, white, $view_light_green);
+      transition: all 0.5s ease;
+      &:hover {
+        @include view-btn(transparent, 0px, 2px, white, darken($view_light_green,20%));
+      }
+    }
+  }
+}
