@@ -30,6 +30,12 @@ header {
       @include view-btn(#ffffff, 30px, 2px, $view_dark_purple, white);
     }
   }
+  &.view-code {
+    padding: 75px 15px;
+    width: 100%;
+    background: url(../images/view-code-bg@2x.png) bottom no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 576px) {
@@ -247,7 +253,7 @@ header {
       @include view-btn(transparent, 0px, 2px, white, $view_light_green);
       transition: all 0.5s ease;
       &:hover {
-        @include view-btn(transparent, 0px, 2px, white, darken($view_light_green,20%));
+        @include view-btn(transparent, 0px, 2px, white, darken($view_light_green, 20%));
       }
     }
   }

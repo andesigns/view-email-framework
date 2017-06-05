@@ -12,7 +12,7 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest('js'));
 });
 
-// concatenate css files
+// move css files
 gulp.task('styles', function () {
   return gulp.src(['bower_components/bootstrap/dist/css/*.min.css', 'bower_components/font-awesome/css/*.min.css'])
     .pipe(gulp.dest('css'));
@@ -24,13 +24,14 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('fonts'));
 });
 
-// Compile Our Sass
+// compile sass
 gulp.task('sass', function () {
   return gulp.src(['css/*.scss', 'css/imports/*.scss'])
     .pipe(sass())
     .pipe(gulp.dest('css'));
 });
 
+// watch sass files for any changes
 gulp.task('watch', function () {
   gulp.watch('css/*.scss', ['sass']);
   gulp.watch('css/imports/*.scss', ['sass']);
